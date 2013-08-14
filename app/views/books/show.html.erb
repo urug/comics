@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>Cover image url:</strong>
+  <%= @book.cover_image_url %>
+</p>
+
+<%= link_to pluralize(@book.issues.count, 'Issue'), book_issues_path(@book) %> |
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

@@ -1,0 +1,33 @@
+<h1><%= @book.name %> Issues</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Title</th>
+      <th>Cover image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @issues.each do |issue| %>
+      <tr>
+        <td><%= issue.number %></td>
+        <td><%= issue.title %></td>
+        <td><%= issue.cover_image_url %></td>
+        <td><%= issue.price %></td>
+        <td><%= link_to 'Show', book_issue_path(@book, issue) %></td>
+        <td><%= link_to 'Edit', edit_book_issue_path(@book, issue) %></td>
+        <td><%= link_to 'Destroy', book_issue_path(@book, issue), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Issue', new_book_issue_path(@book) %>

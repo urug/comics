@@ -1,0 +1,6 @@
+<h1>Editing <%= @issue.title %></h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', book_issue_path(@book, @issue) %> |
+<%= link_to 'Back', book_issues_path(@book) %>
