@@ -22,7 +22,7 @@ class IssuesControllerTest < ActionController::TestCase
       post :create, book_id: @book, issue: { book_id: @issue.book_id, cover_image_url: @issue.cover_image_url, number: @issue.number, price: @issue.price, title: @issue.title }
     end
 
-    assert_redirected_to book_issue_path(@book, assigns(:issue))
+    assert_redirected_to book_path(@book)
   end
 
   test "should show issue" do
@@ -45,6 +45,6 @@ class IssuesControllerTest < ActionController::TestCase
       delete :destroy, book_id: @book, id: @issue
     end
 
-    assert_redirected_to book_issues_path(@book)
+    assert_redirected_to book_path(@book)
   end
 end

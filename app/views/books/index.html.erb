@@ -1,31 +1,12 @@
-<h1>All Books</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Cover image url</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @books.each do |book| %>
-      <tr>
-        <td><%= book.name %></td>
-        <td><%= book.cover_image_url %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to pluralize(book.issues.count, 'Issue'), book_issues_path(book) %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<% @books.in_groups_of(3, false) do |books| %>
+  <div class="row">
+    <% books.each do |book| %>
+      <div class="span3">
+        <h4><%= book.name %> - <%= pluralize(book.issues.count, 'Issue') %></h4>
+        <%= link_to book_path(book) do %>
+          <%= image_tag book.cover_image_url %>
+        <% end %>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Book', new_book_path %>
+  </div>
+<% end %>

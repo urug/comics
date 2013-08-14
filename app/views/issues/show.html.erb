@@ -1,8 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<h1>
+  <%= @book.name %>
+  <div class="btn-group pull-right">
+    <%= link_to 'Edit', edit_book_issue_path(@book, @issue), class: "btn" %>
+    <%= link_to 'Destroy', book_issue_path(@book, @issue), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn" %>
+  </div>
+</h1>
+
+<%= image_tag @issue.cover_image_url, class: "pull-right" %>
+
 <p>
   <strong>Book:</strong>
-  <%= @book.name %>
+  <%= link_to @book.name, book_path(@book) %>
 </p>
 
 <p>
@@ -16,14 +26,6 @@
 </p>
 
 <p>
-  <strong>Cover image url:</strong>
-  <%= @issue.cover_image_url %>
-</p>
-
-<p>
   <strong>Price:</strong>
   <%= @issue.price %>
 </p>
-
-<%= link_to 'Edit', edit_book_issue_path(@book, @issue) %> |
-<%= link_to 'Back', book_issue_path(@book, @issue) %>

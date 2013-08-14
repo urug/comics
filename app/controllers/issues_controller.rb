@@ -29,7 +29,7 @@ class IssuesController < ApplicationController
 
     respond_to do |format|
       if @issue.save
-        format.html { redirect_to [@book, @issue], notice: 'Issue was successfully created.' }
+        format.html { redirect_to [@book], notice: 'Issue was successfully created.' }
         format.json { render action: 'show', status: :created, location: @issue }
       else
         format.html { render action: 'new' }
@@ -57,7 +57,7 @@ class IssuesController < ApplicationController
   def destroy
     @issue.destroy
     respond_to do |format|
-      format.html { redirect_to book_issues_url(@book) }
+      format.html { redirect_to book_url(@book) }
       format.json { head :no_content }
     end
   end
