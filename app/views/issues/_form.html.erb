@@ -1,33 +1,15 @@
-<%= form_for([@book, @issue]) do |f| %>
-  <% if @issue.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
+<%= simple_form_for([@book, @issue]) do |f| %>
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> Product</legend>
 
-      <ul>
-      <% @issue.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <%= f.input :number %>
+    <%= f.input :title %>
+    <%= f.input :cover_image_url %>
+    <%= f.input :price %>
+
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', books_path(@book), :class => 'btn' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :number %><br>
-    <%= f.number_field :number %>
-  </div>
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :cover_image_url %><br>
-    <%= f.text_field :cover_image_url %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </fieldset>
 <% end %>
