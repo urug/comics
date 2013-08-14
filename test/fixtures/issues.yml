@@ -1,15 +1,275 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  book: one
+hawkeye_1:
+  book: hawkeye
   number: 1
-  title: MyString
-  cover_image_url: MyString
-  price: 9.99
+  title: "Hawkeye #1"
+  cover_image_url: http://localhost:3000/comics/hawkeye/1.jpg
+  price: 2.99
 
-two:
-  book: two
+hawkeye_2:
+  book: hawkeye
+  number: 2
+  title: "Hawkeye #2"
+  cover_image_url: http://localhost:3000/comics/hawkeye/2.jpg
+  price: 2.99
+
+hawkeye_3:
+  book: hawkeye
+  number: 3
+  title: "Hawkeye #3"
+  cover_image_url: http://localhost:3000/comics/hawkeye/3.jpg
+  price: 2.99
+
+hawkeye_4:
+  book: hawkeye
+  number: 4
+  title: "Hawkeye #4"
+  cover_image_url: http://localhost:3000/comics/hawkeye/4.jpg
+  price: 2.99
+
+hawkeye_5:
+  book: hawkeye
+  number: 5
+  title: "Hawkeye #5"
+  cover_image_url: http://localhost:3000/comics/hawkeye/5.jpg
+  price: 2.99
+
+hawkeye_6:
+  book: hawkeye
+  number: 6
+  title: "Hawkeye #6"
+  cover_image_url: http://localhost:3000/comics/hawkeye/6.jpg
+  price: 2.99
+
+hawkeye_7:
+  book: hawkeye
+  number: 7
+  title: "Hawkeye #7"
+  cover_image_url: http://localhost:3000/comics/hawkeye/7.jpg
+  price: 2.99
+
+hawkeye_8:
+  book: hawkeye
+  number: 8
+  title: "Hawkeye #8"
+  cover_image_url: http://localhost:3000/comics/hawkeye/8.jpg
+  price: 2.99
+
+hawkeye_9:
+  book: hawkeye
+  number: 9
+  title: "Hawkeye #9"
+  cover_image_url: http://localhost:3000/comics/hawkeye/9.jpg
+  price: 2.99
+
+hawkeye_10:
+  book: hawkeye
+  number: 10
+  title: "Hawkeye #10"
+  cover_image_url: http://localhost:3000/comics/hawkeye/10.jpg
+  price: 2.99
+
+hawkeye_11:
+  book: hawkeye
+  number: 11
+  title: "Hawkeye #11"
+  cover_image_url: http://localhost:3000/comics/hawkeye/11.jpg
+  price: 2.99
+
+hawkeye_12:
+  book: hawkeye
+  number: 12
+  title: "Hawkeye #12"
+  cover_image_url: http://localhost:3000/comics/hawkeye/12.jpg
+  price: 2.99
+
+rachel_rising_1:
+  book: rachel_rising
   number: 1
-  title: MyString
-  cover_image_url: MyString
-  price: 9.99
+  title: "Rachel Rising #1"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/1.jpg
+  price: 3.99
+
+rachel_rising_2:
+  book: rachel_rising
+  number: 2
+  title: "Rachel Rising #2"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/2.jpg
+  price: 3.99
+
+rachel_rising_3:
+  book: rachel_rising
+  number: 3
+  title: "Rachel Rising #3"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/3.jpg
+  price: 3.99
+
+rachel_rising_4:
+  book: rachel_rising
+  number: 4
+  title: "Rachel Rising #4"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/4.jpg
+  price: 3.99
+
+rachel_rising_5:
+  book: rachel_rising
+  number: 5
+  title: "Rachel Rising #5"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/5.jpg
+  price: 3.99
+
+rachel_rising_6:
+  book: rachel_rising
+  number: 6
+  title: "Rachel Rising #6"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/6.jpg
+  price: 3.99
+
+rachel_rising_7:
+  book: rachel_rising
+  number: 7
+  title: "Rachel Rising #7"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/7.jpg
+  price: 3.99
+
+rachel_rising_8:
+  book: rachel_rising
+  number: 8
+  title: "Rachel Rising #8"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/8.jpg
+  price: 3.99
+
+rachel_rising_9:
+  book: rachel_rising
+  number: 9
+  title: "Rachel Rising #9"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/9.jpg
+  price: 3.99
+
+
+rachel_rising_10:
+  book: rachel_rising
+  number: 10
+  title: "Rachel Rising #10"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/10.jpg
+  price: 3.99
+
+rachel_rising_11:
+  book: rachel_rising
+  number: 11
+  title: "Rachel Rising #11"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/11.jpg
+  price: 3.99
+
+rachel_rising_12:
+  book: rachel_rising
+  number: 12
+  title: "Rachel Rising #12"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/12.jpg
+  price: 3.99
+
+rachel_rising_13:
+  book: rachel_rising
+  number: 13
+  title: "Rachel Rising #13"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/13.jpg
+  price: 3.99
+
+rachel_rising_14:
+  book: rachel_rising
+  number: 14
+  title: "Rachel Rising #14"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/14.jpg
+  price: 3.99
+
+rachel_rising_15:
+  book: rachel_rising
+  number: 15
+  title: "Rachel Rising #15"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/15.jpg
+  price: 3.99
+
+rachel_rising_16:
+  book: rachel_rising
+  number: 16
+  title: "Rachel Rising #16"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/16.jpg
+  price: 3.99
+
+rachel_rising_17:
+  book: rachel_rising
+  number: 17
+  title: "Rachel Rising #17"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/17.jpg
+  price: 3.99
+
+rachel_rising_18:
+  book: rachel_rising
+  number: 18
+  title: "Rachel Rising #18"
+  cover_image_url: http://localhost:3000/comics/rachel-rising/18.jpg
+  price: 3.99
+
+uncanny_xmen_129:
+  book: uncanny_xmen
+  number: 129
+  title: "The Uncanny X-Men #129"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/129.jpg
+  price: 3.99
+
+uncanny_xmen_130:
+  book: uncanny_xmen
+  number: 130
+  title: "The Uncanny X-Men #130"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/130.jpg
+  price: 3.99
+
+uncanny_xmen_131:
+  book: uncanny_xmen
+  number: 131
+  title: "The Uncanny X-Men #131"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/131.jpg
+  price: 3.99
+
+uncanny_xmen_132:
+  book: uncanny_xmen
+  number: 132
+  title: "The Uncanny X-Men #132"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/132.jpg
+  price: 3.99
+
+uncanny_xmen_133:
+  book: uncanny_xmen
+  number: 133
+  title: "The Uncanny X-Men #133"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/133.jpg
+  price: 3.99
+
+uncanny_xmen_134:
+  book: uncanny_xmen
+  number: 134
+  title: "The Uncanny X-Men #134"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/134.jpg
+  price: 3.99
+
+uncanny_xmen_135:
+  book: uncanny_xmen
+  number: 135
+  title: "The Uncanny X-Men #135"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/135.jpg
+  price: 3.99
+
+uncanny_xmen_136:
+  book: uncanny_xmen
+  number: 136
+  title: "The Uncanny X-Men #136"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/136.jpg
+  price: 3.99
+
+uncanny_xmen_137:
+  book: uncanny_xmen
+  number: 137
+  title: "The Uncanny X-Men #137"
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/137.jpg
+  price: 3.99

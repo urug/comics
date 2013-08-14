@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-  cover_image_url: MyString
+hawkeye:
+  name: Hawkeye
+  cover_image_url: http://localhost:3000/comics/hawkeye/1.jpg
 
-two:
-  name: MyString
-  cover_image_url: MyString
+rachel_rising:
+  name: Rachel Rising
+  cover_image_url: http://localhost:3000/comics/rachel-rising/1.jpg
+
+uncanny_xmen:
+  name: The Uncanny X-Men
+  cover_image_url: http://localhost:3000/comics/uncanny-xmen/1.jpg

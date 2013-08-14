@@ -2,8 +2,8 @@ require 'test_helper'
 
 class IssuesControllerTest < ActionController::TestCase
   setup do
-    @book = books(:one)
-    @issue = issues(:one)
+    @book = books(:hawkeye)
+    @issue = issues(:hawkeye_1)
   end
 
   test "should get index" do

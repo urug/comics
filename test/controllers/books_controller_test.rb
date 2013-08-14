@@ -2,7 +2,7 @@ require 'test_helper'
 
 class BooksControllerTest < ActionController::TestCase
   setup do
-    @book = books(:one)
+    @book = books(:hawkeye)
   end
 
   test "should get index" do
