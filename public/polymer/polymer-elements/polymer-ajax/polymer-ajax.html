@@ -164,8 +164,10 @@ license that can be found in the LICENSE file.
        *
        * @method go
        */
-      go: function() {
-        var args = {};
+      go: function(args) {
+        if( args === undefined ) {
+          args = {};
+        }
         args.params = this.params || null;
         if (args.params && typeof(args.params) == 'string') {
           args.params = JSON.parse(args.params);
