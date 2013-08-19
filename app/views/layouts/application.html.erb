@@ -9,6 +9,7 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <script src="/polymer/polymer.min.js"></script>
+    <link rel="import" href="/components/comics-sidebar.html" />
   </head>
 
   <body>
@@ -38,18 +39,7 @@
             <%= yield %>
           </div>
           <div class="span3">
-            <div class="well sidebar-nav">
-              <ul class="nav nav-list">
-                <li class="nav-header">Books</li>
-                <% Book.all.each do |book| %>
-                  <li>
-                    <span class="badge pull-right"><%= book.issues.count %></span>
-                    <%= link_to book.name, book_path(book)  %>
-                  </li>
-                <% end %>
-                <li><%= link_to "New Book", new_book_path, class: "btn"  %></li>
-              </ul>
-            </div><!--/.well -->
+            <comics-sidebar></comics-sidebar>
           </div><!--/span-->
         </div><!--/row-->
 

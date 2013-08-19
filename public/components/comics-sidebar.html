@@ -1,0 +1,27 @@
+<link rel="import" href="/polymer/polymer-elements/polymer-ajax/polymer-ajax.html" />
+<polymer-element name="comics-sidebar" attributes="">
+  <template>
+    <link href="/assets/application.css?body=1" media="all" rel="stylesheet" />
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">Books</li>
+        <template repeat="{{books}}">
+          <li>
+            <span class="badge pull-right">{{issue_count}}</span>
+            <a href="/books/{{id}}">{{name}}</a>
+          </li>
+        </template>
+        <li><a href="/books/new" class="btn">New Book</a></li>
+      </ul>
+    </div>
+    <polymer-ajax id="ajax" url="/books.json" handleAs="json" on-polymer-response="receiveAjax" auto></polymer-ajax>
+  </template>
+  <script>
+    Polymer('comics-sidebar', {
+      books: null,
+      receiveAjax: function(e){
+        this.books = e.detail.response;
+      }
+    });
+  </script>
+</polymer-element>
